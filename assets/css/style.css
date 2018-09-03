@@ -1,0 +1,233 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+	width: 100%;
+/*	animation:loadEffect .1s linear;
+*/}
+@keyframes loadEffect {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* svg icon */
+.svg-icon {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 8px;
+  float: right; 
+  cursor: pointer;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+.svg-icon:hover {
+	padding: 5px;
+	background: #eee;
+	border-radius: 50%;
+	transition: all 0.4s;
+	transform: rotateZ(50deg);
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #333 !important;
+}
+
+.svg-icon circle {
+  stroke: #333 !important;
+  stroke-width: 2;
+}
+
+
+
+.header {
+	width: 100%;
+	background: rgba(45,54,76,1);
+	height:60px;
+}
+.wrap {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.result,.code {
+	height: 570px;
+	width:100%;
+	border-top:5px solid #eee;
+	border-bottom:5px solid #ddd;
+	overflow: auto;
+}
+.result { 
+	background:#fff;
+	border-right:5px solid #eee;
+	border-bottom: 0;
+	position: relative;
+}
+.code { 
+	position: relative;
+	box-shadow:0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.menu {
+	width: 100%;
+	height: 41px;
+}
+.menu li {
+	list-style: none;
+	padding: 16px;
+	color: #fff;
+	text-align: center;
+	float: right;
+	font-family: segoe ui;
+	margin-right: 10px;
+}
+.menu li a {
+	color: #fff;
+	text-decoration:none;
+}
+.menu li a:hover {
+	color: #fdc931;
+	transition: all 0.3s ease-out;
+}
+
+.brand {
+	font-weight: 500;
+	font-family: segoe ui;
+	font-size: 20px;
+	margin-right: 30px;
+	margin-left: 40px;
+	transition:all 0.5s linear;
+	color: rgba(12,183,84,1) !important;
+}
+
+.accordion {
+	background: url('../images/bg.png');
+    color: #fff;
+    padding: 14px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 1px;
+    border: 1px solid rgba(45,54,76,1);
+    border-bottom: 0;
+    box-shadow:0 1px 5px 0 rgba(45,54,76,1);
+}
+.accordion:not(:first-child){
+	margin-top: -4px;
+}
+
+.pannel {
+	position: relative;
+}
+.pannel textarea {
+	width: 100%;
+	height: 300px;
+	padding: 12px;
+	font-size: 17px;
+	resize: none;
+	border: 1px solid rgba(45,54,76,1);
+	background: rgba(255, 152, 0, 0.14);
+	color: #444;
+}
+.pannel textarea:focus {
+	outline: none !important;
+    border: 2px solid rgba(45,54,76,1);
+}
+#preview {
+	width: 100%;
+	height: 99%;
+	padding: 0;
+	border: none;
+	outline: none;
+	overflow: auto;
+}
+
+
+/* modals */
+#htmlModal,#cssModal,#jsModal {
+	position: absolute !important;
+	z-index: 9999 !important;
+	width: 100%;
+	height: 100%;
+	background: rgba(68, 220, 134, 0.96);
+    border: 1px solid rgba(45,54,76,1);
+	color:#fff;
+	font-size: 17px;
+	padding: 20px;
+	display: none;
+	overflow: hidden;
+	transition: all 0.4s ease-in;
+}
+
+#metaTag,#pageTitle {
+	width:100% !important;
+	margin: 10px;
+	height: auto !important;
+    background: #fff;
+    border: 1px solid rgba(12,183,84,1);
+    padding: 10px 10px;
+}
+.addBtn {
+	width: 90px;
+	padding:6px 10px;
+	border:none;
+	outline: none;
+	background: #000;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+}
+
+select {
+	padding: 4px 10px;
+    font-size: 17px;
+    margin: 4px;
+}
+
+#addCss,#addJS {
+	width: 90%;
+	margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#addCss .addBtn,#addJS .addBtn {
+	float: none;
+	padding:8px 10px;
+	margin: 4px;
+}
+
+#addedCssItems,#addedJsItems {
+	max-width: 70%;
+    text-align: center;
+	max-height: 175px;
+	margin: 0 auto;
+    overflow: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(45, 54, 76);
+    font-size: 14px;
+    font-family: segoe ui;
+    line-height: 1.4em;
+    display: none;
+}
+
+
+
+
+.footer {
+	width: 100%;
+	height: 35px;
+	background: rgba(45,54,76,1);
+	position: fixed;
+	text-align: center;
+	font-family: segoe ui;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 600;
+	padding: 5px;
+}

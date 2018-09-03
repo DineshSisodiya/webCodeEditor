@@ -1,0 +1,23 @@
+<h1><span>H</span>ello <span>W</span>orld</h1>
+<h2>&lt;\Start coding with me/&gt;</h2>
+
+
+
+body { 
+  box-sizing:border-box; 
+  padding:30px; 
+  margin:0;
+  color:#fff;
+  text-align:center;
+  font-family:segoe ui;
+  background-color: rgb(0, 34, 35);
+  background-image: radial-gradient(circle, rgb(0, 34, 35), black);
+}
+h1 {
+  font-size:50px;
+  margin-top:150px;
+}
+h2,span {
+  transition:color 0.8s ease-in;
+  color:#f90;
+}
