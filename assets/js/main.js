@@ -2,7 +2,7 @@
 // access the Iframe
 var targetIframe = $('#preview')[0].contentWindow.document;
 		targetIframe.open();
-		targetIframe.close();
+		//targetIframe.close();
 
 
 // $(document).ready(function(){
